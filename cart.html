@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Lista-Productos-Canito.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple-1.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog-1.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog-2.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body onload="cart();total()">
+    <div>
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-md-12"><table id="example" class="table table-bordered text-center justify-content-center" cellspacing="0" width="100%">
+        <thead class="bg-warning">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container pt-4">
+            <div class="row row-cols-2 text-center justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 30px;font-weight: 300;">Net Total</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 30px;font-weight: 300;">&#8377;&nbsp;<d id="net"></d></h6>
+                </div>
+            </div>
+            <div class="row row-cols-2 text-center justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 20px;font-weight: 300;">CGST (2.5%)</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 20px;font-weight: 300;">&#8377;&nbsp;<d id="cgst"></d></h6>
+                </div>
+            </div>
+            <div class="row row-cols-2 text-center justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 20px;font-weight: 300;">SGST (2.5%)</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="display-4" style="font-size: 20px;font-weight: 300;">&#8377;&nbsp;<d id="sgst"></d></h6>
+                </div>
+            </div>
+            <div class="row row-cols-2 text-center justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-1" style="font-size: 30px;font-weight: 450;">Grand Total</h2>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-1" style="font-size: 30px;font-weight: 450;">&#8377;&nbsp;<d id="grand"></d></h2>
+                </div>
+                <div class="col mt-3"><button onclick="clean();" class="btn btn-success active btn-lg text-nowrap" type="button">Place Order&nbsp;<i class="fas fa-rocket"></i></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Navbar---Apple.js"></script>
+    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
+  <script src="assets/js/sandeep.js"></script>
+
+</body>
+
+</html>

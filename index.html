@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Lista-Productos-Canito.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple-1.css">
+    <link rel="stylesheet" href="assets/css/Navbar---Apple.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog-1.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog-2.css">
+    <link rel="stylesheet" href="assets/css/s-product-catalog.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#">English</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hindi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="pt-5 mt-4 segment-1" onclick="changeUrl()">
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div></div>
+                    <div class="blog-slider__img"><img src="assets/img/cecb013d9e66f27b2e6180b063697b59.jpg"></div>
+                    <div class="blog-slider__content"><div class="blog-slider__title">North Indian</div></div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div></div>
+                    <div class="blog-slider__img"><img src="assets/img/cuisine-food-india-indian-wallpaper-preview.jpg"></div>
+                    <div class="blog-slider__content"><div class="blog-slider__title">South Indian</div></div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div></div>
+                    <div class="blog-slider__img"><img src="assets/img/food_picture_01_hd_pictures_167558.jpg"></div>
+                    <div class="blog-slider__content"><div class="blog-slider__title">Italian</div></div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div></div>
+                    <div class="blog-slider__img"><img src="assets/img/photo-1523905330026-b8bd1f5f320e.jpg"></div>
+                    <div class="blog-slider__content"><div class="blog-slider__title">Chinese</div></div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div></div>
+                    <div class="blog-slider__img"><img src="assets/img/6-5.jpg"></div>
+                    <div class="blog-slider__content"><div class="blog-slider__title">Mexican</div></div>
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+        </div>
+    </section>
+    <div id="cat-1" class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Our Specials</h2>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/india-1481494_1920-800x445.jpg" style="height: 165px;"></a>
+                    <h3 class="text-center d-flex d-sm-flex justify-content-around justify-content-sm-around align-items-sm-center justify-content-md-around justify-content-lg-around justify-content-xl-around name"
+                        style="font-weight: normal;font-size: 18px;"><name id="name-1">Chicken</name><span style="background: #81f07d;border-radius: 5px;">&nbsp;4.2&nbsp;<i class="fa fa-star"></i>&nbsp;</span></h3>
+                    <p class="lead text-dark" style="font-weight: 450;"><span>&#8377;</span> <price id = "price-1">299</price></p>
+                    <div class="d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center align-items-sm-center align-items-lg-center action">
+                        <button id="d-1"  class = "c-button" style="background-color: transparent;border:none;outline: none;" disabled onclick="addToCart('dec-1')"><i class="la la-minus-circle" role="button"></i></button>
+                        <input id="q-1" class="form-control-plaintext d-lg-flex justify-content-center align-items-center align-content-center align-self-center justify-content-lg-center align-items-lg-center text-center mx-3" type="text" value="0" readonly="" style="outline:none; background: #fe3131;border-radius: 10px;height: 24px;width: 40px;">
+                        <button class = "c-button"  id="i-1" style="background-color: transparent;border:none;outline: none;" onclick="addToCart('inc-1')"><i class="la la-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/s1200-1170x730.jpg" style="height: 165px;"></a>
+                    <h3 class="text-center d-flex d-sm-flex justify-content-around justify-content-sm-around align-items-sm-center justify-content-md-around justify-content-lg-around justify-content-xl-around name"
+                        style="font-weight: normal;font-size: 18px;"><name id="name-2">Roti Tacos</name><span style="background: #81f07d;border-radius: 5px;">&nbsp;4.0&nbsp;<i class="fa fa-star"></i>&nbsp;</span></h3>
+                    <p class="lead text-dark" style="font-weight: 450;"><span>&#8377;</span> <price id = "price-2">99</price></p>
+                    <div class="d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center align-items-sm-center align-items-lg-center action">
+                        <button id="d-2"  class = "c-button" style="background-color: transparent;border:none;outline: none;" disabled onclick="addToCart('dec-2')"><i class="la la-minus-circle" role="button"></i></button>
+                        <input id="q-2" class="form-control-plaintext d-lg-flex justify-content-center align-items-center align-content-center align-self-center justify-content-lg-center align-items-lg-center text-center mx-3" type="text" value="0" readonly="" style="outline:none; background: #fe3131;border-radius: 10px;height: 24px;width: 40px;">
+                        <button class = "c-button"  id="i-2" style="background-color: transparent;border:none;outline: none;" onclick="addToCart('inc-2')"><i class="la la-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="assets/img/y3zbi7dozlbaukcd_1579864007.webp" style="height: 165px;"></a>
+                    <h3 class="text-center d-flex d-sm-flex justify-content-around justify-content-sm-around align-items-sm-center justify-content-md-around justify-content-lg-around justify-content-xl-around name"
+                        style="font-weight: normal;font-size: 18px;"><name id="name-3">Noodles</name><span style="background: #81f07d;border-radius: 5px;">&nbsp;3.5&nbsp;<i class="fa fa-star"></i>&nbsp;</span></h3>
+                    <p class="lead text-dark" style="font-weight: 450;"><span>&#8377;</span> <price id = "price-3">149</price></p>
+                    <div class="d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center align-items-sm-center align-items-lg-center action">
+                        <button id="d-3"  class = "c-button" style="background-color: transparent;border:none;outline: none;" disabled onclick="addToCart('dec-3')"><i class="la la-minus-circle" role="button"></i></button>
+                        <input id="q-3" class="form-control-plaintext d-lg-flex justify-content-center align-items-center align-content-center align-self-center justify-content-lg-center align-items-lg-center text-center mx-3" type="text" value="0" readonly="" style="outline:none; background: #fe3131;border-radius: 10px;height: 24px;width: 40px;">
+                        <button class = "c-button"  id="i-3" style="background-color: transparent;border:none;outline: none;" onclick="addToCart('inc-3')"><i class="la la-plus-circle"></i></button>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </div><button onclick="location.href='cart.html'" class="btn btn-success btn-lg border rounded-circle cart-button btn-" type="button" style="width: 60px;height: 60px;background: url(&quot;assets/img/button.png&quot;) center / cover no-repeat;"></button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Navbar---Apple.js"></script>
+    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
+    <script src="assets/js/sandeep.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.cart-button {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
+.segment-1 {
+  cursor: pointer;
+}
+.c-button {
+  cursor: pointer;
+}
